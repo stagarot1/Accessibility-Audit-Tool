@@ -1,0 +1,62 @@
+:host {
+  display: block;
+}
+
+.skip-link {
+  position: absolute;
+  top: -3rem;
+  left: 1rem;
+  z-index: 1000;
+  padding: 0.75rem 1rem;
+  background: #111827;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 0.5rem;
+}
+
+.skip-link:focus {
+  top: 1rem;
+  outline: 3px solid #f59e0b;
+  outline-offset: 2px;
+}
+
+.app-shell {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.brand {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #111827;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: #374151;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  color: #4f46e5;
+}
+
+.main-content {
+  padding: 2rem 1.5rem 3rem;
+}

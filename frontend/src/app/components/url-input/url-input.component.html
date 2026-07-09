@@ -1,0 +1,21 @@
+<form class="audit-form" [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+  <div class="field-group">
+    <label for="website-url" class="field-label">Website URL</label>
+    <input
+      id="website-url"
+      name="website-url"
+      type="url"
+      formControlName="url"
+      autocomplete="url"
+      placeholder="https://example.com"
+      required
+      aria-describedby="url-help"
+    />
+    <p id="url-help" class="field-help">Enter a full URL beginning with http:// or https://.</p>
+    @if (form.get('url')?.invalid && form.get('url')?.touched) {
+      <p class="error-message" role="alert">Please enter a valid website URL.</p>
+    }
+  </div>
+
+  <button type="submit" class="submit-button">Analyze accessibility</button>
+</form>
